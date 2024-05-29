@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BikeRequestDto",
+  "type": "object",
+  "required": [
+    "model"
+  ],
+  "properties": {
+    "model": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "wheel_diameter": {
+      "type": "integer"
+    },
+    "weight": {
+      "type": "number"
+    },
+    "price": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

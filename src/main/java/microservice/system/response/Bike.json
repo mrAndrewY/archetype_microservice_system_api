@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BikeDto",
+  "type": "object",
+  "required": [
+    "model",
+    "name"
+  ],
+  "properties": {
+    "model": {
+      "type": "string"
+    },
+    "bike_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "wheel_diameter": {
+      "type": "integer"
+    },
+    "weight": {
+      "type": "number"
+    },
+    "price": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    },
+    "sale_start_at": {
+      "type": "string"
+    }
+  }
+}

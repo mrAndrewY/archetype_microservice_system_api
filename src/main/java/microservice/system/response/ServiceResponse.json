@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ServiceResponseDto",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type":
+      "boolean"
+    },
+    "BikeResponse": {
+      "$ref": "BikeResponse.json"
+    },
+    "Error" : {"$ref": "../error/Error.json"}
+  }
+}
+

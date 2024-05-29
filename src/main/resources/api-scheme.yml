@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: sportshop
+  description: |-
+    A simple biking API that allows one operations:
+    - method to create bike
+  version: 0.0.1
+servers:
+  - url: http://localhost:8080/api/v1
+    description: dev server
+tags:
+  - name: sportshopBikes
+    description: Operations with bikes
+paths:
+  /v1/bikes:
+    post:
+      summary: method to create bikes
+      tags:
+        - Bikes
+      operationId: createBike
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "../../main/java/microservice/system/request/BikesRequest.json"
+      responses:
+        '200':
+          description: successful answer with  bikes
+          content:
+            application/json:
+              schema:
+                $ref: "../../main/java/microservice/system/response/ServiceResponse.json"
